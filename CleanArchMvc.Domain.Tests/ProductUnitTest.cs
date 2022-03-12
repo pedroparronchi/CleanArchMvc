@@ -15,6 +15,14 @@ namespace CleanArchMvc.Domain.Tests
                 .NotThrow<Validation.DomainExcepctionValidation>();
         }
 
+        [Fact(DisplayName = "Create Product With Valid State and No Null Reference Excepction")]
+        public void CreateProduct_WithNullImage_NoNullReferenceExcepction()
+        {
+            Action action = () => new Product(1, "Product Name", "Product Description", 10, 10, null);
+            action.Should()
+                .NotThrow<NullReferenceException>();
+        }
+
         [Fact(DisplayName = "Create Product With Invalid Id")]
         public void CreateProduct_NegativeIdValue_DomainExcepctionInvalidId()
         {
