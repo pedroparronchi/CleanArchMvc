@@ -46,7 +46,7 @@ namespace CleanArchMvc.Domain.Entities
                 "Invalid description. Descrption is required");
 
             DomainExcepctionValidation.When(description.Length < 5,
-                "Invalid description, too short, minimum 3 characters");
+                "Invalid description, too short, minimum 5 characters");
 
             DomainExcepctionValidation.When(price < 0,
                 "Invalid price value");
