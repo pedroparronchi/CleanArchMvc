@@ -52,5 +52,6 @@ namespace CleanArchMvc.Infra.Data.Repositories
             await _productContext.SaveChangesAsync();
             return product;
         }
+
     }
 }

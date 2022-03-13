@@ -17,6 +17,7 @@ namespace CleanArchMvc.Domain.Entities
         public Category(int id, string name)
         {
             DomainExcepctionValidation.When(id < 0, "Invalid Id value");
+            Id = id;
             ValidateDomain(name);
         }
 
