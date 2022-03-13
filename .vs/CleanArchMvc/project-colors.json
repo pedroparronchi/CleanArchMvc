@@ -30,7 +30,12 @@
       "ProjectGuid": "7c026055-e8bc-4494-bada-69c463f50788",
       "DisplayName": "CleanArchMvc.WebUi",
       "ColorIndex": 5
+    },
+    "df3f97e9-cc9f-4c12-b6f0-93ce6a40aa59": {
+      "ProjectGuid": "df3f97e9-cc9f-4c12-b6f0-93ce6a40aa59",
+      "DisplayName": "CleanArchMvc.Domain.Tests",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }
