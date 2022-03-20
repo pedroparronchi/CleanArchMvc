@@ -14,6 +14,7 @@ namespace CleanArchMvc.WebUi
         {
             services.AddInfrastructure(Configuration);
             services.AddControllersWithViews();
+            //services.AddAutoMapper(typeof());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment environment)
