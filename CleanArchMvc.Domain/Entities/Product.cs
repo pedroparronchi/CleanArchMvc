@@ -26,13 +26,13 @@ namespace CleanArchMvc.Domain.Entities
             CategoryId = categoryId;
         }
 
-        public string? Name { get; private set; }
-        public string? Description { get; private set; }
+        public string Name { get; private set; }
+        public string Description { get; private set; }
         public decimal Price { get; private set; }
         public int Stock { get; private set; }
-        public string? Image { get; private set; }
+        public string Image { get; private set; }
         public int CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public Category Category { get; set; }
 
         private void ValidateDomain(string name, string description, decimal price, int stock, string image)
         {
@@ -56,6 +56,12 @@ namespace CleanArchMvc.Domain.Entities
 
             DomainExcepctionValidation.When(image?.Length > 250,
                 "Invalid image, too long, maximum 250 characters");
+
+            Name = name;
+            Description = description;
+            Price = price;
+            Stock = stock;
+            Image = image;
         }
     }
 }
